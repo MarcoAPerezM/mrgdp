@@ -19,4 +19,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-
+URL: https://github.com/MarcoAPerezM/Rmrgdp
+BugReports: https://github.com/MarcoAPerezM/Rmrgdp/issues
