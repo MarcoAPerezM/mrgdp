@@ -7,7 +7,7 @@
 pbt_mun(data = x)
 }
 \arguments{
-\item{infile}{Path to the input file}
+\item{data}{is a filtered data}
 }
 \value{
 A data.frame of the infile

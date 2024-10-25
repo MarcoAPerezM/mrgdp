@@ -7,7 +7,7 @@
 economic_units(data = x)
 }
 \arguments{
-\item{data}{}
+\item{data}{data downloaded with economic_census() function}
 }
 \description{
 Economic units
