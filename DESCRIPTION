@@ -1,23 +1,25 @@
 Package: mrgdp
 Title: Mexican Regional Gross Domestic Product
-Version: 0.2
+Version: 0.3
 Authors@R: c(
     person("Marco Antonio", "Pérez-Méndez", email="mperez.mendez@izt.uam.mx", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0119-6637")),
     person("Jocabed", "Sánchez Martínez", role = "aut"), 
-    person("Hortensia", "Moreno Macias",role = "aut"),
+    person("Hortensia", "Moreno-Macias",role = "aut", comment=c(ORCID = "0000-0003-1677-9189")),
     person("Laboratorio de Desigualadad Socioeconómica Regional", "DeSERLab", role="cph" )
            )
-Mainteiner: Marco Antonio Pérez-Méndez <mperez.mendez@izt.uam.mx>
+Maintainer: Marco Antonio Pérez-Méndez <mperez.mendez@izt.uam.mx>
 Description: Download mexican economic census for several years (2004, 2009, 2014 and 2019) and all federal entities. Filter the census data table by municipal data and build a data.frame for all federal entities and several years.
-License: GPL3
+License: GPL-2
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Imports: 
-    REAT
+    REAT,
+    dplyr
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    vroom
 VignetteBuilder: knitr
-URL: https://github.com/MarcoAPerezM/Rmrgdp
-BugReports: https://github.com/MarcoAPerezM/Rmrgdp/issues
+URL: https://github.com/MarcoAPerezM/mrgdp
+BugReports: https://github.com/MarcoAPerezM/mrgdp/issues

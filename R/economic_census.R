@@ -10,7 +10,7 @@
 #' @export
 #' @examples
 #'  economic_census(year=2019, state="ags")
-#' @author Marco Antonio Pérez-Méndez
+#' @author Marco Antonio Perez-Mendez
 #'
 economic_census <- function(year = NA, state = NA){
 
@@ -64,14 +64,12 @@ economic_census <- function(year = NA, state = NA){
 
     # descomprima y abra
     utils::unzip(temp.censo, exdir=zipdir)
-    data.censo.N2 = readr::read_csv(paste0(zipdir,"/conjunto_de_datos/ce",year,"_",state,".csv"))
-    names(data.censo.N2) = tolower(names(data.censo.N2))
-    data.censo = data.censo.N2
-    rm(data.censo.N2)
+    data.censo = vroom::vroom(paste0(zipdir,"/conjunto_de_datos/ce",year,"_",state,".csv"),show_col_types = FALSE, delim = ",")
+    names(data.censo) = tolower(names(data.censo))
 
   }
 
   ####
   if (exists("data.censo")) { return(data.censo) } else {
-    stop(message("\n La opción tecleada en los parametros es incorrecta")) }
+    stop(message("\n parameters are incorrect")) }
 }

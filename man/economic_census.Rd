@@ -22,5 +22,5 @@ from INEGI page
  economic_census(year=2019, state="ags")
 }
 \author{
-Marco Antonio Pérez-Méndez
+Marco Antonio Perez-Mendez
 }

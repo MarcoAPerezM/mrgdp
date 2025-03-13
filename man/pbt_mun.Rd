@@ -4,7 +4,7 @@
 \alias{pbt_mun}
 \title{Filter Municipal data from Economic Census}
 \usage{
-pbt_mun(data = x)
+pbt_mun(data = NA)
 }
 \arguments{
 \item{data}{is a filtered data}

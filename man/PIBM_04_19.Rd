@@ -5,12 +5,12 @@
 \title{PBT Municipal 2004-2019
 Join municipal PBT data for several years}
 \usage{
-PIBM_04_19(data = x, state = NA)
+PIBM_04_19(state = NA)
 }
 \arguments{
-\item{data}{data downloaded}
-
 \item{state}{name of federal entitie}
+
+\item{data}{data downloaded}
 }
 \value{
 A data.frame of the infile
