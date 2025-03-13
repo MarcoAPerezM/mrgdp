@@ -9,8 +9,6 @@ PIBM_04_19(state = NA)
 }
 \arguments{
 \item{state}{name of federal entitie}
-
-\item{data}{data downloaded}
 }
 \value{
 A data.frame of the infile

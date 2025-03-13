@@ -4,7 +4,6 @@
 #' This function joins municipal total gross product for several years and
 #' all federal entities
 #'
-#' @param data data downloaded
 #' @param state name of federal entitie
 #' @return A data.frame of the infile
 #' @export
@@ -49,7 +48,7 @@ PIBM_04_19 <- function( state=NA){
     data <- economic_census(year = 2014, state = state)
     data14 <- pbt_mun(data)
     data14 <- data14[!is.na(data14[,3]), ]
-    data14<- aggregate(x= data14$a111a,
+    data14<- stats::aggregate(x= data14$a111a,
                        # Specify group indicator
                        by = list(data14$municipio),
                        # Specify function (i.e. mean)
@@ -58,7 +57,7 @@ PIBM_04_19 <- function( state=NA){
     data <- economic_census(year = 2019, state = state)
     data19 <- pbt_mun(data)
     data19 <- data19[!is.na(data19[,3]), ]
-    data19<- aggregate(x= data19$a111a,
+    data19<- stats::aggregate(x= data19$a111a,
                        # Specify group indicator
                        by = list(data19$municipio),
                        # Specify function (i.e. mean)

@@ -5,7 +5,7 @@
 #' @export
 #'
 
-economic_units <- function(data=x){
+economic_units <- function(data=NA){
   data <- data[,1:6]
   data <- as.data.frame(data)
   data <- data[is.na(data[,4]), ]

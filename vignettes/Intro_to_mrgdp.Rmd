@@ -47,7 +47,7 @@ This version of "Mexican Regional Gross Domestic Product" (mrgdp) package includ
 
 ## Flow chart
 
-```{r, echo=FALSE}
+```{r eval=FALSE, include=FALSE}
 library(DiagrammeR)
 
 DiagrammeR::grViz("digraph {
@@ -95,7 +95,7 @@ bad4 -> {'wrong arguments'} -> fa
 ```
 The internal process of any function is:
 
-```{r, echo=FALSE}
+```{r eval=FALSE, include=FALSE}
 DiagrammeR::grViz("digraph {
 
 # initiate graph

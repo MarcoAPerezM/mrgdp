@@ -4,7 +4,7 @@
 \alias{economic_units}
 \title{Economic units}
 \usage{
-economic_units(data = x)
+economic_units(data = NA)
 }
 \arguments{
 \item{data}{data downloaded with economic_census() function}
