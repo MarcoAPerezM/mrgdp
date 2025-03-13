@@ -1,3 +1,3 @@
-# mrgdp 0.2
+# mrgdp 0.3
 
 * Initial CRAN submission.
