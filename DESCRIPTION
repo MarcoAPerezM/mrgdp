@@ -1,6 +1,6 @@
 Package: mrgdp
 Title: Mexican Regional Gross Domestic Product
-Version: 0.3
+Version: 0.3.1
 Authors@R: c(
     person("Marco Antonio", "Pérez-Méndez", email="mperez.mendez@izt.uam.mx", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0119-6637")),
     person("Jocabed", "Sánchez Martínez", role = "aut"), 
