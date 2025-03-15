@@ -12,7 +12,8 @@
 #'  economic_census(year=2019, state="ags")
 #' @author Marco Antonio Perez-Mendez
 #'
-economic_census <- function(year = NA, state = NA){
+economic_census <- function(year = NA, state = NA){ # \donttest { (this may take more than 5 seconds)
+
 
   #Generales
   censo.nueva.base = "https://www.inegi.org.mx/contenidos/programas/ce/2019/Datosabiertos/ce"
@@ -60,16 +61,17 @@ economic_census <- function(year = NA, state = NA){
       state == "oax"){
 
     url.tabla = paste0(url.base,".zip")
-    utils::download.file(url.tabla, temp.censo)
+    utils::download.file(url.tabla, temp.censo) # \donttest{} this may take more than 5 seconds.
 
     # descomprima y abra
     utils::unzip(temp.censo, exdir=zipdir)
     data.censo = vroom::vroom(paste0(zipdir,"/conjunto_de_datos/ce",year,"_",state,".csv"),show_col_types = FALSE, delim = ",")
     names(data.censo) = tolower(names(data.censo))
+    #Sys.sleep(5)
 
   }
 
   ####
   if (exists("data.censo")) { return(data.censo) } else {
     stop(message("\n parameters are incorrect")) }
-}
+} #}
