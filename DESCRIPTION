@@ -20,5 +20,5 @@ Suggests:
     rmarkdown,
     vroom
 VignetteBuilder: knitr
-URL: https://github.com/MarcoAPerezM/mrgdp
+URL: <https://github.com/MarcoAPerezM/mrgdp>, https://github.com/MarcoAPerezM/mrgdp
 BugReports: https://github.com/MarcoAPerezM/mrgdp/issues
