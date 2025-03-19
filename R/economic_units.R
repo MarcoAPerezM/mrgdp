@@ -3,6 +3,7 @@
 #' @param data data downloaded with economic_census() function
 #'
 #' @export
+#' @return a data.frame
 #'
 
 economic_units <- function(data=NA){

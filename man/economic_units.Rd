@@ -9,6 +9,9 @@ economic_units(data = NA)
 \arguments{
 \item{data}{data downloaded with economic_census() function}
 }
+\value{
+a data.frame
+}
 \description{
 Economic units
 }

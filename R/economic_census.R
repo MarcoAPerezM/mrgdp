@@ -12,6 +12,7 @@
 #'  economic_census(year=2019, state="ags")
 #' @author Marco Antonio Perez-Mendez
 #'
+#'
 economic_census <- function(year = NA, state = NA){ # \donttest { (this may take more than 5 seconds)
 
 
